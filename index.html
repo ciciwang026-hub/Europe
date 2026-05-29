@@ -553,10 +553,10 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           </tr>
           <tr class="italy-row">
             <td class="date">6/22 周一<br><span style="color:var(--text-muted);font-size:11px;">Mon</span></td>
-            <td class="city">罗马 → 北京<br><span style="color:var(--text-muted);font-size:11px;">Rome → Beijing</span></td>
-            <td class="transport">机场快线到 FCO + 航班<br><span style="color:var(--text-muted);">Leonardo Express + Flight TBD</span></td>
+            <td class="city">罗马 → 重庆 → 北京<br><span style="color:var(--text-muted);font-size:11px;">Rome → Chongqing → Beijing</span></td>
+            <td class="transport">海航 HU7992+HU7368 重庆中转<br><span style="color:var(--text-muted);">FCO 12:25 → 6/23 PEK 10:00</span></td>
             <td class="hotel">—</td>
-            <td class="activities">返程北京<br><span style="color:var(--text-muted);font-size:11px;">Departure to Beijing</span></td>
+            <td class="activities">8:00 退房 → Leonardo Express → FCO 退税+登机<br><span style="color:var(--text-muted);font-size:11px;">Hotel checkout → Termini → FCO duty-free+check-in</span></td>
           </tr>
         </tbody>
       </table>
@@ -709,8 +709,8 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   <h2 class="section-title">费用参考（不设总额，按项参考）</h2>
   <div class="budget-grid">
     <div class="budget-item">
-      <div class="label">✈ 国际机票<small>去程 ¥3,336 已订 · 回程 ¥4,000-5,000 待订</small></div>
-      <div class="amount">¥7,800</div>
+      <div class="label">✈ 国际机票<small>去程 ¥3,336 + 回程 ¥3,651 = 全程已订 ✅</small></div>
+      <div class="amount">¥6,987</div>
     </div>
     <div class="budget-item">
       <div class="label">🏨 住宿（人均14晚）<small>已订7晚 ¥9,181 + 意大利8晚 ¥4,500 待订</small></div>
@@ -743,7 +743,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   </div>
   <div class="budget-total">
     <div class="label">参考总额（不含购物 · 已订+预估）</div>
-    <div class="amount">¥36,931</div>
+    <div class="amount">¥36,118</div>
   </div>
 </section>
 
@@ -849,17 +849,28 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div class="time-block">
         <div class="time-label">凌晨抵达</div>
         <div class="time-content">
-          航班 <strong>06:55</strong> 抵达戴高乐机场 T2A。出关取行李后，乘 <strong>RER B 线</strong> 进市区（站口就在 T2 楼下，约 35-50 分钟，€11.80≈¥92）。
+          航班 <strong>06:55</strong> 抵达戴高乐机场 T2A。<strong>从机场到酒店总通勤约 60-70 分钟</strong>，下面是精确路线：
           <div class="transport-card">
-            <span class="route">✈ 厦门航空 MF8106 + MF825（厦门中转）</span>
+            <span class="route">✈ 厦航 MF8106 + MF825（厦门中转）</span>
             <span class="detail">📍 6/8 06:55 落地 CDG T2A</span>
             <span class="detail">💰 实付 ¥3,336（票面 ¥3,836 - 退款 ¥500）</span>
           </div>
           <div class="transport-card">
-            <span class="route">🚇 RER B 戴高乐 → 市区</span>
-            <span class="detail">⏱ 35-50 分钟</span>
+            <span class="route">🚇 ① RER B 戴高乐 T2 → Châtelet-Les Halles</span>
+            <span class="detail">⏱ 35-40 分钟</span>
             <span class="detail">💰 €11.80≈¥92</span>
-            <span class="detail">📍 Châtelet / Saint-Michel-Notre-Dame 下车</span>
+            <span class="detail">📍 站口就在 T2A 出口楼下</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🚇 ② Metro Line 1 → Charles de Gaulle-Étoile</span>
+            <span class="detail">⏱ 12 分钟</span>
+            <span class="detail">💰 €2.10（地铁单程票）</span>
+            <span class="detail">📍 凯旋门站，出来就是凯旋门正下方</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🚶 ③ 步行到 Star Champs-Elysées</span>
+            <span class="detail">⏱ 3 分钟（200m）</span>
+            <span class="detail">📍 凯旋门西北侧 Rue de l'Arc de Triomphe 18 号</span>
           </div>
         </div>
       </div>
@@ -932,12 +943,21 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div class="time-block">
         <div class="time-label">上午</div>
         <div class="time-content">
-          早起前往<strong>凡尔赛宫</strong>（乘 RER C 线至 Versailles-Château-Rive Gauche 站，约 40 分钟，单程 €3.60≈¥28）。游览金碧辉煌的<strong>镜厅</strong>和广袤的<strong>皇家花园</strong>，感受路易十四时代的奢华。⏱ 3–4 小时
+          早起前往<strong>凡尔赛宫</strong>。<strong>从 Star Champs-Elysées 总通勤约 50-55 分钟</strong>。游览金碧辉煌的<strong>镜厅</strong>和广袤的<strong>皇家花园</strong>，感受路易十四时代的奢华。⏱ 3–4 小时
           <div class="transport-card">
-            <span class="route">🚆 RER C 巴黎 → 凡尔赛</span>
-            <span class="detail">⏱ 约 40 分钟</span>
+            <span class="route">🚇 ① Metro Line 6 (Charles de Gaulle-Étoile → Trocadéro)</span>
+            <span class="detail">⏱ 4 分钟（2 站）</span>
+            <span class="detail">📍 出酒店步行 3 分钟到地铁站</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🚆 ② RER C (Champ de Mars → Versailles-Château)</span>
+            <span class="detail">⏱ 35-40 分钟</span>
             <span class="detail">💰 €3.60 单程≈¥28（往返 ¥56）</span>
-            <span class="detail">🎫 门票 €20≈¥156</span>
+            <span class="detail">📍 Champ de Mars 站从 Trocadéro 步行 8 分钟可达</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🎫 凡尔赛宫门票</span>
+            <span class="detail">💰 €20≈¥156</span>
           </div>
         </div>
       </div>
@@ -991,6 +1011,12 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         <div class="time-label">上午</div>
         <div class="time-content">
           参观<strong>卢浮宫</strong>（周三开放✅，建议 <strong>9:00 准点入场</strong>，€32≈¥250）。重点路线：<strong>《蒙娜丽莎》→《断臂维纳斯》→《胜利女神》→《加纳的婚礼》</strong>。⏱ 3 小时（不贪心，挑重点看）
+          <div class="transport-card">
+            <span class="route">🚇 Star Champs-Elysées → 卢浮宫</span>
+            <span class="detail">⏱ 总 15 分钟（步行+地铁+步行）</span>
+            <span class="detail">📍 Metro Line 1 Charles de Gaulle-Étoile → Palais Royal-Musée du Louvre（7 分钟，6 站）</span>
+            <span class="detail">💰 €2.10</span>
+          </div>
           <div class="transport-card">
             <span class="route">🎫 卢浮宫</span>
             <span class="detail">⏱ 9:00-12:00（3 小时）</span>
@@ -1072,6 +1098,12 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
             <span class="detail">📅 提前预约 notredamedeparis.fr</span>
             <span class="detail">⏱ 1-1.5 小时</span>
           </div>
+          <div class="transport-card">
+            <span class="route">🚇 Star Champs-Elysées → 巴黎圣母院</span>
+            <span class="detail">⏱ 总 25 分钟（步行+地铁+步行）</span>
+            <span class="detail">📍 Metro Line 1 → Châtelet → 步行 5 分钟到西岱岛</span>
+            <span class="detail">💰 €2.10</span>
+          </div>
           看完圣母院后可以在<strong>西岱岛（Île de la Cité）</strong>小岛上随便走走（巴黎诞生地，免费），看看塞纳河中央的小岛风光。
         </div>
       </div>
@@ -1150,6 +1182,12 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         <div class="time-content">
           早起退房，前往<strong>巴黎里昂站（Gare de Lyon）</strong>乘 <strong>TGV Lyria</strong>。建议选 09:23 班次，到巴塞尔 12:24（约 3 小时），同站台换 SBB 12:35 发车 → 14:35 抵达 <strong>Interlaken Ost</strong>，再换 BOB 列车 15:08 → 15:42 抵达 Grindelwald。
           <div class="transport-card">
+            <span class="route">🚇 Star Champs-Elysées → Gare de Lyon</span>
+            <span class="detail">⏱ 总 25-30 分钟（含拖行李）</span>
+            <span class="detail">📍 步行 3min 到地铁 → Metro Line 1 直达 Bastille → 换 Line 14 一站到 Gare de Lyon</span>
+            <span class="detail">⚠️ 建议 8:30 前出发，预留 30 分钟到站缓冲</span>
+          </div>
+          <div class="transport-card">
             <span class="route">🚄 TGV Lyria 09:23 巴黎里昂 → 12:24 巴塞尔</span>
             <span class="detail">⏱ 3h01m</span>
             <span class="detail">💰 人均 ¥700-1,000</span>
@@ -1169,7 +1207,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div class="time-block">
         <div class="time-label">下午（入住 Sunstar）</div>
         <div class="time-content">
-          15:50 抵达 Sunstar Hotel & Spa Grindelwald（从火车站步行 7 分钟），办理入住——<strong>这家酒店连住 2 晚，明天不用挪窝</strong>。稍作休息洗澡，把脏衣服扔进洗衣袋（瑞士酒店一般有付费洗衣服务）。
+          15:42 抵达 Grindelwald 火车站，<strong>步行 7 分钟（500m）沿 Dorfstrasse 主街向东</strong>就到 Sunstar Hotel。办理入住——<strong>这家酒店连住 2 晚，明天不用挪窝</strong>。稍作休息洗澡，把脏衣服扔进洗衣袋（瑞士酒店一般有付费洗衣服务）。
           <div class="transport-card">
             <span class="route">🏨 Sunstar Hotel &amp; Spa Grindelwald ★★★★</span>
             <span class="detail">📍 Dorfstrasse 168, Grindelwald</span>
@@ -1436,11 +1474,17 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div class="time-block">
         <div class="time-label">上午 / 中午</div>
         <div class="time-content">
-          早 8:00 退房，乘火车<strong>因特拉肯 → 米兰</strong>。穿越壮观的<strong>圣哥达基线隧道</strong>（Gotthard Base Tunnel，世界最长铁路隧道 57km），约 5 小时抵达米兰中央站。
+          7:30 Essential by Dorint 早餐+退房。<strong>从酒店步行 5 分钟（350m）就到 Interlaken West 站</strong>，超方便！但 West 站的米兰直达车少，建议先坐 5 分钟到 Interlaken Ost 站（IC 列车每 30 分钟一班），从 Ost 换车去米兰。
           <div class="transport-card">
-            <span class="route">🚆 Interlaken Ost → Milano Centrale</span>
-            <span class="detail">⏱ 约 5 小时（需在 Spiez 或 Brig 换车）</span>
+            <span class="route">🚶 Essential by Dorint → Interlaken West 站</span>
+            <span class="detail">⏱ 5 分钟（350m，直线步行）</span>
+            <span class="detail">📍 出酒店向北走 Rugenparkstrasse</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🚆 Interlaken West → Ost → Milano Centrale</span>
+            <span class="detail">⏱ 约 5 小时（在 Spiez 或 Brig 换车）</span>
             <span class="detail">💰 CHF 60≈¥492（瑞士境内可用半价卡）</span>
+            <span class="detail">📍 穿越圣哥达基线隧道（世界最长铁路隧道 57km）</span>
           </div>
         </div>
       </div>
@@ -1970,58 +2014,95 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         <div class="day-label">Day</div>
       </div>
       <div class="day-info">
-        <div class="day-route">罗马 → 北京 · 返程日</div>
+        <div class="day-route">罗马 → 重庆 → 北京 · 返程日</div>
         <div class="day-date">6月22日 · 周一</div>
         <div class="day-tags">
           <span class="day-tag italy">返程</span>
-          <span class="day-tag">☀️ 28/16°C</span>
+          <span class="day-tag">✈ 12:25 起飞</span>
+          <span class="day-tag">📅 6/23 10:00 抵达北京</span>
         </div>
       </div>
       <div class="day-costs">
+        <span class="day-cost-badge">✈ ¥3,651</span>
         <span class="day-cost-badge">🚌 ¥109</span>
-        <span class="day-cost-badge">✈ 待定</span>
         <span class="day-cost-badge">🍽 ¥200</span>
-        <span class="day-cost-total">当日 ¥309+</span>
+        <span class="day-cost-total">人均 ¥3,960</span>
       </div>
     </div>
     <div class="day-body">
       <div class="time-block">
-        <div class="time-label">关于回程航班</div>
+        <div class="time-label">回程航班（已订✅）</div>
         <div class="time-content">
-          回程航班尚未确定。<strong>常见时段：罗马→北京 多在 22:00-23:00 起飞</strong>（次日下午抵达），也有部分上午班机（如 11:00 起飞）。请尽快确定回程，<strong>提前 2-3 个月购买能省 30-40%</strong>。
+          <strong>海南航空 HU7992 + HU7368（重庆中转）</strong>，全程含税人均 ¥3,651。注意：<strong>重庆中转行李直挂北京</strong>，不用重新托运。
           <div class="transport-card">
-            <span class="route">✈ 罗马 FCO → 北京（参考航线）</span>
-            <span class="detail">💰 ¥4,000-5,500（提前 2-3 个月）</span>
-            <span class="detail">⏱ 直飞约 10-11 小时 / 中转约 14-18 小时</span>
-            <span class="detail">📅 国航 CA940 / 中欧航空 / 中转土耳其/卡塔尔</span>
+            <span class="route">✈ HU7992 罗马 FCO T3 → 重庆 CKG T3</span>
+            <span class="detail">⏱ 6/22 12:25 → 6/23 05:00（10h35m，含时差）</span>
+            <span class="detail">💺 波音 787 经济舱 · 每人托运 1×23kg + 手提 1×10kg</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🔄 重庆中转 2h25m</span>
+            <span class="detail">📍 行李直挂北京，不用重新值机</span>
+            <span class="detail">⚠️ 但要重新过安检</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">✈ HU7368 重庆 CKG T3 → 北京 PEK T2</span>
+            <span class="detail">⏱ 6/23 07:25 → 10:00（2h35m）</span>
+            <span class="detail">💺 波音 737-800 经济舱 · 托运 1×23kg + 手提 1×7kg</span>
           </div>
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">上午（视航班时间）</div>
+        <div class="time-label">早上 7:00（早起退房）</div>
         <div class="time-content">
-          <strong>如果航班是下午/晚上</strong>：早上可以最后散步罗马，喝杯意式浓缩咖啡（€1.5≈¥12），在<strong>Termini 站</strong>免税店做最后采购，或退税时间在机场办理（Global Blue 退税点）。<strong>如果航班是上午</strong>：直接前往机场。
+          <strong>12:25 起飞 = 必须 9:25 到机场办登机 = 8:00 离开酒店</strong>。早起退房，简单酒店早餐（如果含早）。<strong>今天没有自由活动时间</strong>，行程节奏：
+          <div class="transport-card">
+            <span class="route">⏰ 时间倒推</span>
+            <span class="detail">12:25 起飞</span>
+            <span class="detail">11:25 关闭登机口（起飞前 1h）</span>
+            <span class="detail">9:25 完成值机+安检+退税（起飞前 3h）</span>
+            <span class="detail">8:55 抵达 FCO 机场</span>
+            <span class="detail">8:23 Leonardo Express 出发</span>
+            <span class="detail">8:00 离开罗马酒店</span>
+          </div>
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">前往机场</div>
+        <div class="time-label">8:00-9:00 前往机场</div>
         <div class="time-content">
-          乘 <strong>Leonardo Express 机场快线</strong>（€14≈¥109，约 32 分钟）前往罗马菲乌米奇诺机场（FCO），<strong>建议提前 3 小时抵达</strong>办理退税+登机。
+          从罗马酒店打车或步行到 <strong>Termini 中央火车站</strong>（一般罗马历史中心酒店步行 15 分钟可达），乘 <strong>Leonardo Express 机场快线</strong>。
           <div class="transport-card">
             <span class="route">🚌 Leonardo Express Termini → FCO</span>
-            <span class="detail">⏱ 约 32 分钟（每 15 分钟一班）</span>
+            <span class="detail">⏱ 32 分钟（每 15 分钟一班）</span>
             <span class="detail">💰 €14≈¥109</span>
             <span class="detail">📍 Termini 站 23-25 号站台</span>
           </div>
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">机场退税要点</div>
+        <div class="time-label">9:00-12:25 机场流程</div>
         <div class="time-content">
-          <strong>退税流程</strong>：① 进机场前先在<strong>海关盖章柜台</strong>（Customs）出示护照+小票+未拆封商品；② 然后到对应退税公司柜台（<strong>Global Blue / Planet</strong>）领现金或现退到卡；③ 现金退款手续费较高，建议<strong>退到信用卡</strong>。退税阈值：单店单日满 €70.01 即可申请。
+          <strong>退税务必当天做完</strong>：① 进机场<strong>不要先值机</strong>，先到<strong>海关盖章柜台（Customs/Dogana）</strong>出示护照+小票+未拆封商品；② 然后到对应退税公司柜台（<strong>Global Blue / Planet</strong>）领现金或退到信用卡（推荐退卡，手续费低）；③ 退税阈值：单店单日满 €70.01 即可申请，一般退 10-12%。
+          <div class="transport-card">
+            <span class="route">📝 9:30 前完成退税</span>
+            <span class="detail">⏱ 排队约 30-45 分钟（旺季）</span>
+            <span class="detail">📍 FCO T3 出发层</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🛂 9:45 值机+托运</span>
+            <span class="detail">⏱ 海航柜台办理</span>
+            <span class="detail">📍 行李直挂北京 PEK</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🛃 10:30 安检+出关</span>
+            <span class="detail">⏱ 约 30-45 分钟</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">⏳ 11:00-12:25 候机</span>
+            <span class="detail">免税店购物 + 用餐</span>
+          </div>
         </div>
       </div>
-      <div class="tip-box">回程航班建议<strong>选直飞</strong>（国航 CA940 通常直飞），节省 6-8 小时中转折磨。商务舱促销期可能 ¥10,000-15,000。<strong>欧盟退税务必当天用：</strong>提前 3 小时到机场，海关盖章 + 退税窗口 + 行李托运一气呵成。</div>
+      <div class="tip-box"><strong>重庆中转注意：</strong>① 行李直挂北京，不用取行李重新托运；② 但人要<strong>过国内安检</strong>（5:00 落地 → 7:25 起飞，2 个多小时绰绰有余）；③ 重庆机场早上 5 点凉，可以在候机室小睡。<strong>退税铁律：</strong>商品保留小票+未拆封，海关盖章 → 退税窗口 → 行李托运，顺序不能错！</div>
     </div>
   </div>
 </div>
@@ -2254,7 +2335,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   <p>行程已根据各景点闭馆日优化 · 卢浮宫（周二闭）· 凡尔赛宫（周一闭）· 乌菲兹/学院（周一闭）· 梵蒂冈（周日闭）</p>
   <p>关键调整 · 巴黎 4 天（凯旋门旁 Star Champs-Elysées）· 瑞士 3 天（Grindelwald 2 晚+Interlaken 1 晚）· 意大利 8 天</p>
   <p>汇率参考：1 EUR ≈ ¥7.8 · 1 CHF ≈ ¥8.2（2026 年 6 月）</p>
-  <p>去程机票实付 ¥3,336 · 巴黎+瑞士住宿已订 人均 ¥9,181 · 参考总额 ¥36,931</p>
+  <p>去程 ¥3,336 + 回程 ¥3,651 已订 · 巴黎+瑞士住宿已订 人均 ¥9,181 · 参考总额 ¥36,118</p>
   <p style="margin-top: 20px; color: var(--border);">Updated 2026.05.27 · 与王紫沿同行 ♥</p>
 </footer>
 
