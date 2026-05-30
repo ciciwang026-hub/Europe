@@ -484,7 +484,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           <tr class="swiss-row">
             <td class="date">6/12 周五<br><span style="color:var(--text-muted);font-size:11px;">Fri</span></td>
             <td class="city">巴黎 → Grindelwald<br><span style="color:var(--text-muted);font-size:11px;">Paris → Grindelwald</span></td>
-            <td class="transport">TGV+SBB+BOB 经巴塞尔 约 6h<br><span style="color:var(--text-muted);">Paris-Lyon → Basel → Interlaken → Grindelwald</span></td>
+            <td class="transport"><strong>已订✅</strong> 4 段联运 6h42m<br><span style="color:var(--text-muted);font-size:11px;">巴黎东 07:58 → Grindelwald 14:40</span></td>
             <td class="hotel"><strong>Sunstar Hotel &amp; Spa Grindelwald ★★★★</strong><br><span style="color:var(--text-muted);font-size:11px;">Dorfstrasse 168 · 已订</span></td>
             <td class="activities">入住 Sunstar + Dorfstrasse 主街散步 + Eiger 北壁日落<br><span style="color:var(--text-muted);font-size:11px;">Hotel check-in, village stroll, Eiger sunset</span></td>
           </tr>
@@ -740,6 +740,26 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <span style="color:var(--text-muted);font-size:11px;">实付（票面¥3,836-退款¥500）</span>
             </td>
           </tr>
+          <tr class="france-row">
+            <td class="date">6/12<br><span style="color:var(--text-muted);font-size:11px;">法→瑞</span></td>
+            <td>
+              <strong>巴黎东 → Grindelwald</strong><br>
+              <span style="color:var(--text-muted);font-size:12px;">4 段联运 · 二等座</span><br>
+              <span style="color:var(--text-muted);font-size:11px;">TGV INOUI 2407 + TER 096249 + IC 969 + Regio 267</span><br>
+              <span style="color:var(--swiss);font-size:11px;">⚠️ Interlaken Ost 换乘只有 5 分钟</span>
+            </td>
+            <td style="font-size:12px;">
+              <strong>07:58</strong> Gare de l'Est 出发<br>
+              09:59 Strasbourg 换车<br>
+              11:38 Basel 换车<br>
+              13:59 Interlaken Ost 换车<br>
+              <strong>14:40 抵达 Grindelwald</strong>
+            </td>
+            <td>
+              <strong>¥1,400/人</strong><br>
+              <span style="color:var(--text-muted);font-size:11px;">2 人合计 ¥2,800</span>
+            </td>
+          </tr>
           <tr class="swiss-row">
             <td class="date">6/14<br><span style="color:var(--text-muted);font-size:11px;">瑞士境内</span></td>
             <td>
@@ -803,7 +823,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       </table>
     </div>
     <div class="visa-footer-note">
-      💰 已订交通 <strong>人均 ¥7,557</strong>（去程+瑞士境内+跨境联运+回程）· 法国/意大利境内高铁待订
+      💰 已订交通 <strong>人均 ¥8,957</strong>（去程+巴黎→瑞士+瑞士境内+瑞→意+回程）· 意大利境内高铁待订
     </div>
   </div>
 </section>
@@ -1393,37 +1413,72 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       </div>
     </div>
     <div class="day-body">
-      <div class="time-block">
-        <div class="time-label">早上（出发）</div>
+            <div class="time-block">
+        <div class="time-label">🚨 早 6:30 起床（出发！）</div>
         <div class="time-content">
-          早起退房，前往<strong>巴黎里昂站（Gare de Lyon）</strong>乘 <strong>TGV Lyria</strong>。建议选 09:23 班次，到巴塞尔 12:24（约 3 小时），同站台换 SBB 12:35 发车 → 14:35 抵达 <strong>Interlaken Ost</strong>，再换 BOB 列车 15:08 → 15:42 抵达 Grindelwald。
+          <strong>7:58 巴黎东站发车 → 14:40 抵达 Grindelwald</strong>，全程 4 段换乘，<strong>每段换乘时间紧（最紧的是 Interlaken Ost 只有 5 分钟换 Regio）</strong>。
           <div class="transport-card">
-            <span class="route">🚇 Star Champs-Elysées → Gare de Lyon</span>
-            <span class="detail">⏱ 总 25-30 分钟（含拖行李）</span>
-            <span class="detail">📍 步行 3min 到地铁 → Metro Line 1 直达 Bastille → 换 Line 14 一站到 Gare de Lyon</span>
-            <span class="detail">⚠️ 建议 8:30 前出发，预留 30 分钟到站缓冲</span>
-          </div>
-          <div class="transport-card">
-            <span class="route">🚄 TGV Lyria 09:23 巴黎里昂 → 12:24 巴塞尔</span>
-            <span class="detail">⏱ 3h01m</span>
-            <span class="detail">💰 人均 ¥700-1,000</span>
-          </div>
-          <div class="transport-card">
-            <span class="route">🚆 SBB 12:35 巴塞尔 → 14:35 Interlaken Ost</span>
-            <span class="detail">⏱ 2 小时（同站台换车）</span>
-            <span class="detail">💰 含在跨境联票内</span>
-          </div>
-          <div class="transport-card">
-            <span class="route">🚞 BOB 列车 15:08 Interlaken Ost → 15:42 Grindelwald</span>
-            <span class="detail">⏱ 34 分钟</span>
-            <span class="detail">💰 CHF 11≈¥45/人（半价卡 ¥22）</span>
+            <span class="route">⏰ 时间倒推</span>
+            <span class="detail">07:58 TGV INOUI 2407 发车</span>
+            <span class="detail">07:30 到 Gare de l'Est 站台</span>
+            <span class="detail">07:00-07:15 抵达巴黎东站</span>
+            <span class="detail">06:45 离开酒店</span>
+            <span class="detail">06:30 起床+简单早餐</span>
           </div>
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">下午（入住 Sunstar）</div>
+        <div class="time-label">06:45 酒店 → 巴黎东站（注意是东站不是里昂站！）</div>
         <div class="time-content">
-          15:42 抵达 Grindelwald 火车站，<strong>步行 7 分钟（500m）沿 Dorfstrasse 主街向东</strong>就到 Sunstar Hotel。办理入住——<strong>这家酒店连住 2 晚，明天不用挪窝</strong>。稍作休息洗澡，把脏衣服扔进洗衣袋（瑞士酒店一般有付费洗衣服务）。
+          ⚠️ <strong>这次去的是巴黎东站 Gare de l'Est</strong>，不是上次说的里昂站。巴黎东站是开往德国/瑞士东部的主站。
+          <div class="transport-card">
+            <span class="route">🚇 Star Champs-Elysées → Gare de l'Est</span>
+            <span class="detail">⏱ 总 25-30 分钟（含拖行李）</span>
+            <span class="detail">📍 步行 3min 到 Étoile → Line 1 → Châtelet → 换 Line 4 → Gare de l'Est</span>
+            <span class="detail">💰 €2.10（地铁单程票）</span>
+            <span class="detail">💡 建议买 Navigo Easy 日票更省心</span>
+          </div>
+        </div>
+      </div>
+      <div class="time-block">
+        <div class="time-label">07:58-14:40 跨境联运（4 段换乘）</div>
+        <div class="time-content">
+          已订 <strong>4 段联运车票 ¥1,400/人</strong>（2 人合计 ¥2,800），<strong>每段都对应具体班次，错过就完了</strong>：
+          <div class="transport-card" style="border:2px solid var(--france);">
+            <span class="route">🚄 ① TGV INOUI 2407 · 巴黎东 → 斯特拉斯堡</span>
+            <span class="detail">⏱ 07:58 → 09:59（2h01m）</span>
+            <span class="detail">📍 法国境内 TGV 高铁，舒适</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🚆 ② TER 096249 · 斯特拉斯堡 → 巴塞尔</span>
+            <span class="detail">⏱ 10:21 → 11:38（1h17m）</span>
+            <span class="detail">📍 法国 TER 区间车，22 分钟换乘</span>
+            <span class="detail">⚠️ 跨境进入瑞士！记得带护照</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">🚆 ③ InterCity 969 · 巴塞尔 → Interlaken Ost</span>
+            <span class="detail">⏱ 11:53 → 13:59（2h06m）</span>
+            <span class="detail">📍 瑞士 IC 城际列车，15 分钟换乘</span>
+            <span class="detail">⏳ 中途在 Spiez 站经过（不需要下车）</span>
+          </div>
+          <div class="transport-card" style="border:2px solid var(--swiss);">
+            <span class="route">🚞 ④ Regio 267 · Interlaken Ost → Grindelwald</span>
+            <span class="detail">⏱ 14:04 → 14:40（36 分钟）</span>
+            <span class="detail">⚠️ <strong>换乘只有 5 分钟！</strong>下车后立刻找 Regio 站台</span>
+            <span class="detail">📍 山区小列车，沿途风景超美</span>
+          </div>
+          <div class="transport-card">
+            <span class="route">⏰ 总时长 + 价格</span>
+            <span class="detail">6 小时 42 分钟（含 3 次换乘）</span>
+            <span class="detail">💰 <strong>¥1,400/人</strong>（2 人合计 ¥2,800）</span>
+            <span class="detail">📅 已订✅ 不可改不可退</span>
+          </div>
+        </div>
+      </div>
+      <div class="time-block">
+        <div class="time-label">下午 14:40-15:00（入住 Sunstar）</div>
+        <div class="time-content">
+          14:40 抵达 Grindelwald 火车站，<strong>步行 7 分钟（500m）沿 Dorfstrasse 主街向东</strong>就到 Sunstar Hotel。15:00 办理入住——<strong>这家酒店连住 2 晚，明天不用挪窝</strong>。比原计划早到 1 小时，<strong>下午时间更宽松</strong>。
           <div class="transport-card">
             <span class="route">🏨 Sunstar Hotel &amp; Spa Grindelwald ★★★★</span>
             <span class="detail">📍 Dorfstrasse 168, Grindelwald</span>
@@ -1433,18 +1488,19 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">傍晚（Grindelwald 镇散步）</div>
+        <div class="time-label">下午 / 傍晚（Grindelwald 镇散步）</div>
         <div class="time-content">
-          17:30 步行小镇主街 <strong>Dorfstrasse</strong>——抬头就是<strong>艾格峰（Eiger）北壁</strong>，瑞士最经典的雪山入门款。沿街有瑞士军刀店、Läderach 巧克力工厂店、户外用品店。<strong>First 缆车站（Firstbahn）就在主街上</strong>，提前去看看明天的位置（步行约 8 分钟）。
+          15:30 步行小镇主街 <strong>Dorfstrasse</strong>——抬头就是<strong>艾格峰（Eiger）北壁</strong>，瑞士最经典的雪山入门款。沿街有瑞士军刀店、Läderach 巧克力工厂店、户外用品店。<strong>First 缆车站（Firstbahn）就在主街上</strong>，提前去看看明天的位置（步行约 8 分钟），同时确认明早缆车开放时间。
         </div>
       </div>
       <div class="time-block">
         <div class="time-label">晚上</div>
         <div class="time-content">
-          晚餐推荐 Sunstar 酒店内的<strong>Restaurant Spycher</strong>（瑞士奶酪火锅 Fondue 招牌，CHF 35-45/人≈¥287-369），或者主街上的 <strong>Onkel Tom's Hütte</strong>（披萨小酒馆，CHF 25-35）。晚上 21:00 太阳落山后山下凉爽，早睡养精神——明天 First 山一日游。
+          晚餐推荐 Sunstar 酒店内的<strong>Restaurant Spycher</strong>（瑞士奶酪火锅 Fondue 招牌，CHF 35-45/人≈¥287-369），或者主街上的 <strong>Onkel Tom's Hütte</strong>（披萨小酒馆，CHF 25-35）。<strong>瑞士 6 月日落约 21:30</strong>，晚饭后可以再看一眼粉色 Eiger 山顶（被夕阳染色的 Alpenglow 现象）。早睡养精神——明天 First 山一日游。
         </div>
       </div>
-      <div class="tip-box"><strong>务必提前买的：</strong>① <strong>瑞士半价卡（Half Fare Card）CHF 120≈¥984</strong>，所有火车+缆车一律半价，在瑞士 3 天能省 CHF 200+。② <strong>跨境票</strong>立刻去 sbb.ch 找 Supersaver，预算 €120-180/人。</div>
+      <div class="tip-box">⚠️ <strong>4 段换乘最容易出问题的是 Interlaken Ost 换 Regio 只有 5 分钟</strong>。万一前段晚点 5 分钟，会赶不上 14:04 的 Regio 267。这时候用你<strong>同一张联运票，下一班 14:34 Regio 还能上</strong>（每 30 分钟一班，到 Grindelwald 15:10）。<strong>务必提前买的：</strong>瑞士半价卡 Half Fare Card CHF 120≈¥984，明天 First 山缆车+所有火车一律半价。</div>
+
       <div class="accommodation">
         <span class="place">🏨 Sunstar Hotel &amp; Spa Grindelwald（订单 ...521325）</span>
         <span class="price">人均 ¥2,100（全程 ¥4,199 / 2）</span>
