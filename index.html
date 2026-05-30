@@ -392,7 +392,9 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
 @media (max-width: 640px) {
   .day-header { flex-direction: column; padding: 20px 20px 16px; }
   .day-body { padding: 20px; }
-  .day-costs { margin-left: 0; }
+  .day-costs { margin-left: 0; width: 100%; justify-content: flex-start; }
+  .day-cost-badge { font-size: 12px; padding: 3px 8px; }
+  .day-cost-total { font-size: 12px; padding: 3px 10px; }
   .stats-bar { grid-template-columns: repeat(2, 1fr); margin: -30px 16px 0; }
   .stat-item:nth-child(odd):nth-last-child(2),
   .stat-item:nth-child(even):last-child { border-right: none; }
@@ -987,7 +989,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   </div>
   <div class="budget-total">
     <div class="label">参考总额（不含购物 · 已订+预估）</div>
-    <div class="amount">¥38,118</div>
+    <div class="amount">¥38,216</div>
   </div>
 </section>
 
@@ -2331,10 +2333,10 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       </div>
       <div class="day-costs">
         <span class="day-cost-badge">🚄 ¥208 ✅</span>
-        <span class="day-cost-badge">🎫 ¥257</span>
+        <span class="day-cost-badge">🎫 ¥339 ✅</span>
         <span class="day-cost-badge">🍽 ¥400</span>
         <span class="day-cost-badge">🏨 ¥902 ✅</span>
-        <span class="day-cost-total">当日 ¥1,767</span>
+        <span class="day-cost-total">当日 ¥1,849</span>
       </div>
     </div>
     <div class="day-body">
@@ -2379,10 +2381,10 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         <div class="time-content">
           14:30 看完圣彼得，<strong>步行 10 分钟绕到梵蒂冈博物馆入口</strong>（沿城墙往北走）。16:00-17:30 随机入场，<strong>进去后直奔重点</strong>：拉斐尔房间 → 西斯廷教堂（米开朗基罗<strong>《创世纪》</strong>穹顶画 + <strong>《最后的审判》</strong>祭坛画）。时间紧凑但精华全覆盖。⏱ 约 2 小时
           <div class="transport-card">
-            <span class="route">🎫 梵蒂冈博物馆 + 西斯廷教堂（16:00-17:30 入场）</span>
-            <span class="detail">💰 €25≈¥195</span>
+            <span class="route">🎫 梵蒂冈博物馆 + 西斯廷教堂 16:00-17:30（已订✅）</span>
+            <span class="detail">💰 ¥277/人（双人 ¥554 · ...269826）</span>
             <span class="detail">⏱ 约 2 小时（精华路线）</span>
-            <span class="detail">⚠️ 只有 16:00-17:30 随机入场票，尽早买！</span>
+            <span class="detail">📍 含 MG 罗马购物村 10 欧购物卡+9 折券+VIP 休息室</span>
           </div>
         </div>
       </div>
@@ -2419,47 +2421,47 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         </div>
       </div>
       <div class="day-costs">
-        <span class="day-cost-badge">🎫 ¥179</span>
+        <span class="day-cost-badge">🎫 ¥195 ✅</span>
         <span class="day-cost-badge">🍽 ¥400</span>
         <span class="day-cost-badge">🏨 ¥902 ✅</span>
-        <span class="day-cost-total">当日 ¥1,481</span>
+        <span class="day-cost-total">当日 ¥1,497</span>
       </div>
     </div>
     <div class="day-body">
       <div class="time-block">
-        <div class="time-label">上午（罗马帝国 1500 年）</div>
+        <div class="time-label">上午（罗马老城漫步）</div>
         <div class="time-content">
-          早 8:30 从 The Hive Hotel 出发（<strong>地铁 B 线 Termini→Colosseo 2 站 5 分钟</strong>，或步行 18 分钟）直奔<strong>罗马斗兽场（Colosseo）</strong>——古罗马最壮观的圆形竞技场，可容纳 5 万人，<strong>有效期 24 小时联票含斗兽场+古罗马广场+帕拉蒂尼山</strong>（€18≈¥140）。⏱ 1.5-2 小时
+          9:00 从 The Hive Hotel 出发，<strong>步行 15 分钟</strong>到<strong>万神殿（Pantheon）</strong>——古罗马建筑巅峰，混凝土穹顶 2000 年屹立不倒，<strong>穹顶中央圆形天窗（Oculus）"天眼"</strong>的光影变幻令人震撼。⏱ 30 分钟
           <div class="transport-card">
-            <span class="route">🎫 罗马斗兽场联票</span>
-            <span class="detail">💰 €18≈¥140（24h 有效）</span>
-            <span class="detail">⏱ 1.5-2 小时</span>
-            <span class="detail">📅 提前 2-3 天预约 colosseo.it（限时段）</span>
+            <span class="route">🎫 万神殿</span>
+            <span class="detail">💰 €5≈¥39</span>
+            <span class="detail">⏱ 30 分钟</span>
           </div>
+          9:45 步行 5 分钟到<strong>特莱维喷泉（许愿池 Fontana di Trevi）</strong>——背对喷泉投硬币许愿，免费。10:15 继续步行 5 分钟到<strong>西班牙广场（Piazza di Spagna）</strong>+ 西班牙台阶，奥黛丽·赫本《罗马假日》取景地。
         </div>
       </div>
       <div class="time-block">
         <div class="time-label">中午</div>
         <div class="time-content">
-          斗兽场出来步行到<strong>古罗马广场（Foro Romano）+ 帕拉蒂尼山（Palatino）</strong>（联票含）——共和国与帝国时代的政治中心，恺撒墓+元老院+维斯塔贞女神庙遗址，2000 年历史在脚下。⏱ 2-3 小时（午餐在 Foro 山顶野餐，俯瞰古罗马遗址）
+          11:00 老城区闲逛购物。12:00 午餐推荐 Termini 附近吃饱（下午体力战）。
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">下午</div>
+        <div class="time-label">下午 13:45（斗兽场 · 已订✅）</div>
         <div class="time-content">
-          下午往北走到<strong>万神殿（Pantheon）</strong>——古罗马建筑巅峰，混凝土穹顶 2000 年屹立不倒，<strong>穹顶中央圆形天窗（Oculus）"天眼"</strong>的光影变幻令人震撼。€5≈¥39，<strong>每月第一个周日免费</strong>。⏱ 30 分钟
-          <div class="transport-card">
-            <span class="route">🎫 万神殿</span>
-            <span class="detail">💰 €5≈¥39</span>
-            <span class="detail">⏱ 30 分钟</span>
-            <span class="detail">📍 离纳沃纳广场 5 分钟步行</span>
+          <strong>地铁 B 线 Termini → Colosseo（2 站 5 分钟）</strong>，13:45 准时入场<strong>罗马斗兽场（Colosseo）</strong>——古罗马最壮观的圆形竞技场，可容纳 5 万人。⏱ 1.5 小时
+          <div class="transport-card" style="border:2px solid var(--italy);">
+            <span class="route">🎫 罗马斗兽场联票 · 13:45 场（已订✅）</span>
+            <span class="detail">💰 ¥156/人（双人 ¥312 · ...286170）</span>
+            <span class="detail">⏱ 1.5-2 小时</span>
+            <span class="detail">📍 联票含古罗马广场 + 帕拉蒂尼山（24h 有效）</span>
           </div>
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">傍晚（许愿池 + 西班牙广场）</div>
+        <div class="time-label">下午（古罗马广场 + 帕拉蒂尼山）</div>
         <div class="time-content">
-          <strong>特莱维喷泉（许愿池 Fontana di Trevi）</strong>免费——背对喷泉投硬币许愿（每天清理 €3000 全部捐给慈善机构）。继续走到<strong>西班牙广场（Piazza di Spagna）</strong>+ 西班牙台阶，奥黛丽·赫本《罗马假日》取景地。
+          斗兽场出来步行到<strong>古罗马广场（Foro Romano）+ 帕拉蒂尼山（Palatino）</strong>（联票含）——共和国与帝国时代的政治中心，恺撒墓+元老院+维斯塔贞女神庙遗址，2000 年历史在脚下。⏱ 2-3 小时
         </div>
       </div>
       <div class="time-block">
@@ -2468,7 +2470,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           晚餐在<strong>特拉斯泰韦雷区（Trastevere）</strong>——台伯河西岸的中世纪老城区，蜿蜒小巷+藤蔓爬满外墙，罗马本地人吃饭的地方。推荐<strong>炸供花（Fiori di Zucca Fritti）</strong>+<strong>烤羊排（Abbacchio al Forno）</strong>。
         </div>
       </div>
-      <div class="tip-box">今天<strong>梵蒂冈闭馆（周日）</strong>，所以全部安排罗马本城景点。<strong>UV=8 必备防晒</strong>，斗兽场+古罗马广场<strong>没有遮阴</strong>，戴宽檐帽+太阳镜+SPF50 防晒霜每 2 小时补涂。</div>
+      <div class="tip-box">今天<strong>梵蒂冈闭馆（周日）</strong>，所以全部安排罗马本城景点。<strong>上午先逛免费景点</strong>（万神殿+许愿池+西班牙广场），<strong>下午 13:45 斗兽场已订</strong>。<strong>UV=8 必备防晒</strong>，斗兽场+古罗马广场<strong>没有遮阴</strong>，带帽+SPF50。</div>
       <div class="accommodation">
         <span class="place">🏨 <strong>The Hive Hotel ★★★★★</strong>（同上）</span>
         <span class="price">人均 ¥902/晚</span>
@@ -2702,15 +2704,15 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         </tr>
         <tr>
           <td class="name">梵蒂冈博物馆 + 西斯廷（16:00-17:30 入场）</td>
-          <td><strong style="color:var(--swiss);">⚠️ 仅剩随机入场票</strong></td>
-          <td class="url">museivaticani.va</td>
-          <td class="price">¥195</td>
+          <td><strong style="color:var(--italy);">✅ 已订 6/20</strong></td>
+          <td class="url">携程 ...269826</td>
+          <td class="price">¥277</td>
         </tr>
         <tr>
-          <td class="name">罗马斗兽场联票（24h）</td>
-          <td>提前 2-3 天</td>
-          <td class="url">colosseo.it</td>
-          <td class="price">¥140<small style="color:var(--text-muted);font-size:11px;"> 含古罗马广场</small></td>
+          <td class="name">罗马斗兽场联票 13:45 场（24h）</td>
+          <td><strong style="color:var(--italy);">✅ 已订 6/21</strong></td>
+          <td class="url">携程 ...286170</td>
+          <td class="price">¥156<small style="color:var(--text-muted);font-size:11px;"> 含古罗马广场</small></td>
         </tr>
       </tbody>
     </table>
@@ -2806,7 +2808,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   <p>行程已根据各景点闭馆日优化 · 卢浮宫（周二闭）· 凡尔赛宫（周一闭）· 乌菲兹/学院（周一闭）· 梵蒂冈（周日闭）</p>
   <p>关键调整 · 巴黎 4 天（凯旋门旁 Star Champs-Elysées）· 瑞士 3 天（Grindelwald 2 晚+Interlaken 1 晚）· 意大利 8 天</p>
   <p>汇率参考：1 EUR ≈ ¥7.8 · 1 CHF ≈ ¥8.2（2026 年 6 月）</p>
-  <p>机票+火车+住宿全部已订 ✅ · 住宿 14 晚 ¥15,817 · 交通 ¥9,671 · 参考总额 ¥38,118</p>
+  <p>机票+火车+住宿全部已订 ✅ · 住宿 14 晚 ¥15,817 · 交通 ¥9,671 · 参考总额 ¥38,216</p>
   <p style="margin-top: 20px; color: var(--border);">Updated 2026.05.30 · 与王紫沿同行 ♥</p>
 </footer>
 
