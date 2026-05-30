@@ -219,7 +219,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
 
 .day-costs {
   display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto;
-  align-self: center; flex-shrink: 0;
+  align-self: center;
 }
 .day-cost-badge {
   font-family: var(--font-mono); font-size: 13px;
@@ -389,9 +389,14 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
 .nav-day.italy-nav:hover, .nav-day.italy-nav.active { background: var(--italy); color: #fff; }
 
 /* ── Responsive ── */
+@media (max-width: 960px) {
+  .day-header { flex-wrap: wrap; }
+  .day-costs { flex-basis: 100%; margin-left: 0; margin-top: 12px; }
+}
 @media (max-width: 640px) {
   .day-header { flex-direction: column; padding: 20px 20px 16px; }
   .day-body { padding: 20px; }
+  .day-route { font-size: 17px; }
   .day-costs { margin-left: 0; width: 100%; justify-content: flex-start; }
   .day-cost-badge { font-size: 12px; padding: 3px 8px; }
   .day-cost-total { font-size: 12px; padding: 3px 10px; }
@@ -967,11 +972,11 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div class="amount">¥2,684</div>
     </div>
     <div class="budget-item">
-      <div class="label">🎫 景点门票<small>含First山项目套票</small></div>
-      <div class="amount">¥3,500</div>
+      <div class="label">🎫 景点门票<small>已订 ¥2,254 + 现场 ≈¥1,200</small></div>
+      <div class="amount">¥3,454</div>
     </div>
     <div class="budget-item">
-      <div class="label">🪂 First山专项<small>滑翔伞CHF200+山地卡丁车CHF35</small></div>
+      <div class="label">🪂 First山专项<small>滑翔伞 CHF200 + 卡丁车 CHF35 + 缆车 CHF74</small></div>
       <div class="amount">¥2,200</div>
     </div>
     <div class="budget-item">
@@ -989,7 +994,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   </div>
   <div class="budget-total">
     <div class="label">参考总额（不含购物 · 已订+预估）</div>
-    <div class="amount">¥38,216</div>
+    <div class="amount">¥37,892</div>
   </div>
 </section>
 
@@ -1410,7 +1415,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           晚餐推荐去<strong>圣日耳曼德佩区（Saint-Germain-des-Prés）</strong>——左岸文人雅士聚集地，海明威/萨特/波伏娃常去的 <strong>Café de Flore</strong>、<strong>Les Deux Magots</strong> 老字号咖啡馆就在这里（从奥赛步行 10 分钟）。点一份地道法餐（焗蜗牛+鸭胸+焦糖布丁），€40-60≈¥312-468。
         </div>
       </div>
-      <div class="tip-box"><strong>11:00 入场比 9:00 入场更舒服：</strong>① 不用早起赶时间（D2 已经够累）；② 卢浮宫上午 11 点游客已经稳定不会再激增；③ 出来正好午餐时间。<strong>卢浮宫和奥赛都是大馆，千万别贪心</strong>，挑重点看。<strong>塞纳河夜游船已挪到 D1 倒时差日</strong>，所以今晚就好好享受左岸晚餐。</div>
+      <div class="tip-box"><strong>卢浮宫和奥赛都是大馆</strong>，挑重点看别贪心。</div>
 
       <div class="accommodation">
         <span class="place">🏨 <strong>同上 Star Champs-Elysées</strong>（已订）</span>
@@ -1488,7 +1493,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           自由活动建议三选一：<strong>米其林晚餐</strong>（推荐 Le Comptoir du Relais €60-80）/ <strong>红磨坊歌舞表演</strong>（€87-220）/ <strong>歌剧院听音乐会</strong>（Palais Garnier，€30 起）。明早要打包去瑞士，记得收拾行李。
         </div>
       </div>
-      <div class="tip-box">巴黎圣母院重开后<strong>人气爆棚</strong>，无预约现场基本进不去，<strong>务必提前 7 天</strong>在官网或 APP 抢预约（每天约提前 2 天放新票）。购物结束后<strong>在店内办理退税</strong>比机场快很多，记得保留护照+小票。</div>
+      <div class="tip-box">巴黎圣母院<strong>须提前 7 天</strong>在 notredamedeparis.fr 抢免费票。购物后<strong>在店内办退税</strong>比机场快。</div>
       <div class="accommodation">
         <span class="place">🏨 <strong>同上酒店但换房型</strong>（舒适双人间，已订 ...247938）</span>
         <span class="price">人均 ¥1,079/晚</span>
@@ -1619,7 +1624,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           晚餐推荐 Sunstar 酒店内的<strong>Restaurant Spycher</strong>（瑞士奶酪火锅 Fondue 招牌，CHF 35-45/人≈¥287-369），或者主街上的 <strong>Onkel Tom's Hütte</strong>（披萨小酒馆，CHF 25-35）。<strong>瑞士 6 月日落约 21:30</strong>，晚饭后可以再看一眼粉色 Eiger 山顶（被夕阳染色的 Alpenglow 现象）。早睡养精神——明天 First 山一日游。
         </div>
       </div>
-      <div class="tip-box">⚠️ <strong>4 段换乘最容易出问题的是 Interlaken Ost 换 Regio 只有 5 分钟</strong>。万一前段晚点 5 分钟，会赶不上 14:04 的 Regio 267。这时候用你<strong>同一张联运票，下一班 14:34 Regio 还能上</strong>（每 30 分钟一班，到 Grindelwald 15:10）。<strong>务必提前买的：</strong>瑞士半价卡 Half Fare Card CHF 120≈¥984，明天 First 山缆车+所有火车一律半价。</div>
+      <div class="tip-box">⚠️ Interlaken Ost 换 Regio <strong>只有 5 分钟</strong>。万一错过，同一张票下一班 14:34 还能上（每 30 分钟一班）。</div>
 
       <div class="accommodation">
         <span class="place">🏨 Sunstar Hotel &amp; Spa Grindelwald（订单 ...521325）</span>
@@ -1662,7 +1667,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           <div class="transport-card">
             <span class="route">🚠 Grindelwald → First 缆车（Firstbahn）</span>
             <span class="detail">⏱ 缆车 25 分钟（爬升到海拔 2168m）</span>
-            <span class="detail">💰 往返 CHF 74≈¥608（半价卡 ¥304）</span>
+            <span class="detail">💰 往返 CHF 74≈¥608</span>
             <span class="detail">📍 缆车站就在 Sunstar 走 8 分钟</span>
           </div>
         </div>
@@ -1679,19 +1684,19 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           </div>
           <div class="transport-card">
             <span class="route">🛴 ② Mountain Cart 山地卡丁车</span>
-            <span class="detail">💰 CHF 35≈¥287（半价 ¥143）</span>
+            <span class="detail">💰 CHF 35≈¥287</span>
             <span class="detail">⏱ 约 40 分钟下山</span>
             <span class="detail">📍 First → Schreckfeld，3 个轮子无动力卡丁车，纯靠重力滑下山</span>
           </div>
           <div class="transport-card">
             <span class="route">🛞 ③ Trottibike 滑步车</span>
-            <span class="detail">💰 CHF 19≈¥156（半价 ¥78）</span>
+            <span class="detail">💰 CHF 19≈¥156</span>
             <span class="detail">⏱ 约 30 分钟</span>
             <span class="detail">📍 Bort → Grindelwald 6km 下坡滑行（接 Mountain Cart 后续）</span>
           </div>
           <div class="transport-card">
             <span class="route">🦅 ④ First Flyer / Glider（二选一）</span>
-            <span class="detail">💰 CHF 31≈¥254/项（半价 ¥127）</span>
+            <span class="detail">💰 CHF 31≈¥254/项</span>
             <span class="detail">⏱ 各 1 分钟（高速滑行）</span>
             <span class="detail">📍 Flyer 时速 84km/h 飞索 · Glider 仰躺滑翔器</span>
           </div>
@@ -1703,7 +1708,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           下山后回 Sunstar 洗个澡，<strong>明早还是这里早餐+退房</strong>。晚餐推荐主街上的 <strong>Restaurant Onkel Tom's Hütte</strong>（披萨 CHF 25-30）或 <strong>Steakhouse Avocado Bar</strong>（CHF 40-60）。如果想看 Eiger 北壁的星空，21:00 后小镇灯光暗，仰头能看到很多星。
         </div>
       </div>
-      <div class="tip-box"><strong>住 Grindelwald 的最大优势：</strong>不用通勤！酒店走 8 分钟就到缆车。如果天气不好，可以推到明天上 First 山（D7 滑翔伞天气取消的话）。<strong>天气提醒：</strong>Grindelwald 6 月降雨 22 天/月，<strong>务必提前查山顶气象</strong>（jungfrau.ch 官网或 MeteoSwiss APP）。</div>
+      <div class="tip-box">天气不好可以和 D7 对调。<strong>查山顶气象：</strong>jungfrau.ch 或 MeteoSwiss APP。</div>
       <div class="accommodation">
         <span class="place">🏨 Sunstar Hotel &amp; Spa Grindelwald（订单 ...521349）</span>
         <span class="price">人均 ¥1,349（全程 ¥2,697 / 2）</span>
@@ -1788,7 +1793,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           <div class="transport-card">
             <span class="route">🚆 14:05 Interlaken Ost → 14:30 Lauterbrunnen</span>
             <span class="detail">⏱ 25 分钟（每 30 分钟一班）</span>
-            <span class="detail">💰 CHF 7≈¥57（半价 ¥29）</span>
+            <span class="detail">💰 CHF 7≈¥57</span>
           </div>
           重点打卡：
           <div class="transport-card">
@@ -1831,7 +1836,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           晚餐推荐何维克街上的瑞士传统餐厅（瑞士军刀 Victorinox 旗舰店、Läderach 巧克力工厂店也在这条街上，路过逛逛）。22:00 前回酒店收拾行李，明早出发去意大利。
         </div>
       </div>
-      <div class="tip-box"><strong>滑翔伞天气铁律：</strong>不下雨+风速 &lt; 25 km/h 才能飞。报名时<strong>务必选有"无理由退款 / 改期"政策的公司</strong>（Skywings、Paragliding Interlaken 都支持 24 小时前免费改期）。<strong>万一今天天气太烂取消</strong>，把今天的滑翔伞和昨天的 First 山调换（昨天飞，今天上山）。<strong>Trümmelbach 是雨天救星</strong>——大瀑布在山体内部，下雨也能玩。</div>
+      <div class="tip-box">滑翔伞需不下雨+风速 &lt; 25km/h。选 <strong>24h 免费改期</strong>的公司（Skywings / Paragliding Interlaken）。</div>
       <div class="accommodation">
         <span class="place">🏨 Essential by Dorint Interlaken（订单 ...531842）</span>
         <span class="price">人均 ¥1,551（全程 ¥3,102 / 2）</span>
@@ -1946,7 +1951,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           享用米兰传统美食：<strong>米兰炖饭（Risotto alla Milanese）</strong>（金灿灿藏红花炖饭）+<strong>米兰炸猪排（Cotoletta alla Milanese）</strong>。普通餐厅约 €25-35/人（¥195-273）。
         </div>
       </div>
-      <div class="tip-box">米兰大教堂登顶有<strong>电梯票（€20≈¥156）</strong>和<strong>楼梯票（€13≈¥101）</strong>两种。预算紧选楼梯（251 级），不赶时间选电梯。教堂入内需<strong>过肩长裙+不能穿短裤</strong>。</div>
+      <div class="tip-box">大教堂登顶：楼梯 €13 / 电梯 €20。入内需<strong>过膝+不露肩</strong>。</div>
       <div class="accommodation">
         <span class="place">🏨 <strong>Oriana Homèl Milano ★★★★</strong>（已订 ...987893）</span>
         <span class="price">人均 ¥808（全程 ¥1,616 / 2 + €20 城市税）</span>
@@ -2218,7 +2223,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           在<strong>河畔餐厅</strong>享用佛罗伦萨灵魂美食<strong>T 骨牛排（Bistecca alla Fiorentina）</strong>（按公斤计价 €50-70/份≈¥390-546，1.2kg 起，建议 2-3 人合吃一份），配 Chianti 红酒。
         </div>
       </div>
-      <div class="tip-box">⚠️ <strong>比萨斜塔登顶强制预约：</strong>6 月旺季 14:00 时段常常 <strong>2-3 周前满</strong>，<strong>立刻去 opapisa.it 抢</strong>。<strong>登塔限制：</strong>8 岁以下不能登，不能带包水瓶。<strong>佛罗伦萨圣母百花穹顶</strong>已订明天 13:30 登顶（乌菲兹 09:15 先看），<strong>今晚 19:00 直接老桥日落</strong>更舒服。</div>
+      <div class="tip-box">比萨斜塔 15:00 已订✅。登塔不能带包+水瓶（有储物柜）。</div>
       <div class="accommodation">
         <span class="place">🏨 <strong>MH Florence Hotel & Spa ★★★★</strong>（已订 ...184434）</span>
         <span class="price">人均 ¥912/晚（全程 ¥3,645 / 2 / 2 晚 + €28）</span>
@@ -2576,7 +2581,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           </div>
         </div>
       </div>
-      <div class="tip-box"><strong>重庆中转注意：</strong>① 行李直挂北京，不用取行李重新托运；② 但人要<strong>过国内安检</strong>（5:00 落地 → 7:25 起飞，2 个多小时绰绰有余）；③ 重庆机场早上 5 点凉，可以在候机室小睡。<strong>退税铁律：</strong>商品保留小票+未拆封，海关盖章 → 退税窗口 → 行李托运，顺序不能错！</div>
+      <div class="tip-box">行李直挂北京不用取。重庆需重新过安检（2h 绰绰有余）。<strong>退税顺序：</strong>海关盖章 → 退税窗口 → 再托运。</div>
     </div>
   </div>
 </div>
@@ -2635,7 +2640,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           <td class="name">🚠 Grindelwald-First 缆车套票</td>
           <td>到当地买即可</td>
           <td class="url">jungfrau.ch</td>
-          <td class="price">¥608<small style="color:var(--text-muted);font-size:11px;"> 半价 ¥304</small></td>
+          <td class="price">¥608</td>
         </tr>
         <tr>
           <td class="name"><strong style="color:var(--swiss);">🪂 滑翔伞 双人串联</strong></td>
@@ -2647,7 +2652,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
           <td class="name">🛴 Mountain Cart 山地卡丁车</td>
           <td>到当地买</td>
           <td class="url">jungfrau.ch</td>
-          <td class="price">¥287<small style="color:var(--text-muted);font-size:11px;"> 半价 ¥143</small></td>
+          <td class="price">¥287</td>
         </tr>
         <tr>
           <td class="name">《最后的晚餐》米兰</td>
@@ -2734,7 +2739,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         <li>旅行保险单（申根要求，含滑翔伞条款）</li>
         <li>Visa / Mastercard 信用卡</li>
         <li>欧元现金约 €300（¥2,340）</li>
-        <li>瑞士法郎约 CHF 200（¥1,640，小镇用）</li>
+        <li>瑞士法郎约 CHF 100（¥820，小镇用）</li>
       </ul>
     </div>
     <div class="checklist-group">
@@ -2778,7 +2783,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div class="checklist-group-title">实用 APP</div>
       <ul>
         <li>Trenitalia / Italo（意大利高铁）</li>
-        <li>SBB Mobile（瑞士火车，含半价卡）</li>
+        <li>SBB Mobile（瑞士火车）</li>
         <li>SNCF Connect（法国火车）</li>
         <li>jungfrau.ch（瑞士缆车实时状态）</li>
         <li>MeteoSwiss（瑞士山区天气最准）</li>
@@ -2808,7 +2813,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   <p>行程已根据各景点闭馆日优化 · 卢浮宫（周二闭）· 凡尔赛宫（周一闭）· 乌菲兹/学院（周一闭）· 梵蒂冈（周日闭）</p>
   <p>关键调整 · 巴黎 4 天（凯旋门旁 Star Champs-Elysées）· 瑞士 3 天（Grindelwald 2 晚+Interlaken 1 晚）· 意大利 8 天</p>
   <p>汇率参考：1 EUR ≈ ¥7.8 · 1 CHF ≈ ¥8.2（2026 年 6 月）</p>
-  <p>机票+火车+住宿全部已订 ✅ · 住宿 14 晚 ¥15,817 · 交通 ¥9,671 · 参考总额 ¥38,216</p>
+  <p>机票+火车+住宿全部已订 ✅ · 住宿 14 晚 ¥15,817 · 交通 ¥9,671 · 参考总额 ¥37,892</p>
   <p style="margin-top: 20px; color: var(--border);">Updated 2026.05.30 · 与王紫沿同行 ♥</p>
 </footer>
 
