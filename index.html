@@ -311,6 +311,26 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   .visa-table th, .visa-table td { padding: 8px 6px; }
 }
 
+/* ── Hotel Rating（个人住宿评级）── */
+.hotel-rating {
+  display: block; margin-top: 8px; padding: 7px 10px;
+  border-radius: 8px; font-size: 12px; line-height: 1.55;
+}
+.hotel-rating .tier {
+  display: inline-block; font-weight: 700; font-size: 11px;
+  padding: 2px 9px; border-radius: 5px; margin-right: 6px;
+  letter-spacing: 0.02em; color: #fff; white-space: nowrap;
+}
+.hotel-rating .cmt { color: var(--text); }
+.rating-s { background: var(--gold-soft); }
+.rating-s .tier { background: var(--gold); }
+.rating-a { background: var(--italy-soft); }
+.rating-a .tier { background: var(--italy); }
+.rating-b { background: var(--france-soft); }
+.rating-b .tier { background: var(--france); }
+.rating-c { background: #f0efed; }
+.rating-c .tier { background: #78716c; }
+
 /* ── Booking Table ── */
 .booking-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 .booking-table th {
@@ -424,7 +444,6 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
       <div><strong>出发城市</strong>北京 Beijing</div>
       <div><strong>抵达巴黎</strong>2026.06.08 06:55</div>
       <div><strong>罗马返京</strong>2026.06.22</div>
-      <div><strong>已订机票</strong>¥3,336（去程）</div>
     </div>
   </div>
   <div class="hero-scroll">▼ 向下滚动</div>
@@ -598,6 +617,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <strong>香榭丽舍大街明星酒店 ★★★★</strong><br>
               <span style="color:var(--text-muted);font-size:12px;">Star Champs-Elysées · 18 Rue de l'Arc de Triomphe, 75017</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +33-1-76212242 · 高级双床房 14-15m²</span>
+              <span class="hotel-rating rating-b"><span class="tier">👍 人上人</span><span class="cmt">麻雀虽小五脏俱全，有空调</span></span>
             </td>
             <td style="font-size:12px;">
               凯旋门 · <strong>步行 2 分钟</strong><br>
@@ -635,6 +655,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <strong>格林德瓦阳光星辰酒店 ★★★★</strong><br>
               <span style="color:var(--text-muted);font-size:12px;">Sunstar Hotel &amp; Spa Grindelwald · Dorfstrasse 168, 3818</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +41-33-8547777 · 甄选双人房 24-26m² · 含早餐</span>
+              <span class="hotel-rating rating-b"><span class="tier">👍 人上人</span><span class="cmt">景色绝美，但枕头不舒服</span></span>
             </td>
             <td style="font-size:12px;">
               Grindelwald 火车站 · <strong>步行 7 分钟</strong><br>
@@ -672,6 +693,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <span style="color:var(--text-muted);font-size:12px;">Essential by Dorint · Rugenparkstrasse 8-10, 3800</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +41-338209100 · 基本客房 · 含早餐</span><br>
               <span style="color:var(--swiss);font-size:11px;">⚠️ 押金 CHF 300（信用卡预授权，离店退）</span>
+              <span class="hotel-rating rating-s"><span class="tier">👑 顶级</span><span class="cmt">地理位置好且舒服</span></span>
             </td>
             <td style="font-size:12px;">
               Interlaken West 站 · <strong>步行 5 分钟</strong><br>
@@ -691,6 +713,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <strong>米兰奥丽安娜家园 ★★★★</strong><br>
               <span style="color:var(--text-muted);font-size:12px;">Oriana Homèl Milano · Via San Maurilio, 11, 20123</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +39-02-87165161 · 一室房 25m² · 1.5m 双人床</span>
+              <span class="hotel-rating rating-a"><span class="tier">🔥 夯！！！</span><span class="cmt">欧洲以来性价比最高的房子！loft 又大又配空调，住进去都不想走</span></span>
             </td>
             <td style="font-size:12px;">
               米兰大教堂 · <strong>步行 5 分钟</strong><br>
@@ -710,6 +733,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <strong>威尼斯水瓶座酒店 ★★★★</strong><br>
               <span style="color:var(--text-muted);font-size:12px;">Hotel Aquarius Venice · Campo S. Giacomo dell'Orio, 1624, 30135</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +39-041-8660112 · 含双人早餐</span>
+              <span class="hotel-rating rating-c"><span class="tier">😐 NPC</span><span class="cmt">要过桥，带着行李很麻烦，得到那儿找人帮你运行李</span></span>
             </td>
             <td style="font-size:12px;">
               Santa Lucia 火车站 · <strong>步行 8 分钟</strong><br>
@@ -728,6 +752,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <strong>MH 佛罗伦萨酒店及水疗中心 ★★★★</strong><br>
               <span style="color:var(--text-muted);font-size:12px;">MH Florence Hotel & Spa · Via Luigi Alamanni, 37, 50123</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +39-055-0883331</span>
+              <span class="hotel-rating rating-b"><span class="tier">👍 人上人</span><span class="cmt">中规中矩，但地理位置方便</span></span>
             </td>
             <td style="font-size:12px;">
               SMN 火车站 · <strong>步行 3 分钟！</strong><br>
@@ -747,6 +772,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
               <strong>蜂巢酒店 ★★★★★</strong><br>
               <span style="color:var(--text-muted);font-size:12px;">The Hive Hotel · Via Torino, 6, 00184</span><br>
               <span style="color:var(--text-muted);font-size:11px;">📞 +39-06-40412000 · 行政房 24m²</span>
+              <span class="hotel-rating rating-a"><span class="tier">🔥 贼大！！！</span></span>
             </td>
             <td style="font-size:12px;">
               Termini 火车站 · <strong>步行 6 分钟</strong><br>
@@ -1744,9 +1770,9 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
     </div>
     <div class="day-body">
       <div class="time-block">
-        <div class="time-label">早上（退房 + 拖行李去 Interlaken）</div>
+        <div class="time-label">早上（退房 → 行李先寄存酒店）</div>
         <div class="time-content">
-          7:00 Sunstar 早餐+退房。<strong>07:47</strong> 从 Grindelwald 火车站 <strong>Platform 2</strong> 上车，<strong>R61 列车 → 08:24 抵达 Interlaken Ost Platform 2</strong>（37 分钟，沿途风景超美）。<strong>在 Ost 站下车（不要继续坐到 West）</strong>——第一步把行李寄存在站内自助寄存柜（入口右侧，CHF 9/件/天，刷信用卡）。
+          7:00 Sunstar 早餐+退房。<strong>07:47</strong> 从 Grindelwald 火车站 <strong>Platform 2</strong> 上车，<strong>R61 列车 → 08:24 抵达 Interlaken Ost</strong>（37 分钟，沿途风景超美）。<strong>直接换乘 IC61 一站到 Interlaken West</strong>（4 分钟，含在同一张票里），步行 5 分钟到 <strong>Essential by Dorint 酒店，把行李寄存在前台</strong>（入住 14:00 后再回来拿房卡），轻装出门玩，<strong>省下车站自助柜的寄存费</strong>。
           <div class="transport-card" style="border:2px solid var(--swiss);">
             <span class="route">✅ <strong>已订 Point-to-Point 票</strong>（Grindelwald → Interlaken West, 经 Ost）</span>
             <span class="detail">💰 CHF 14.80≈<strong>¥130/人</strong>（2 人合计 ¥260）</span>
@@ -1758,19 +1784,19 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
             <span class="route">🚞 R61 列车 07:47 Grindelwald → 08:24 Interlaken Ost</span>
             <span class="detail">⏱ 37 分钟</span>
             <span class="detail">📍 出发 Platform 2 · 到达 Platform 2</span>
-            <span class="detail">⚠️ 在 Ost 下车（不要坐到 West），后续行李取了再继续坐 IC61 一站到 West</span>
+            <span class="detail">➡️ 到 Ost 后换 IC61 继续一站到 West（同一张票，免费）</span>
           </div>
           <div class="transport-card">
-            <span class="route">🧳 Interlaken Ost 站自助寄存</span>
-            <span class="detail">💰 CHF 9≈¥74/件/天</span>
-            <span class="detail">📍 站内右侧大型寄存柜，24h 可用</span>
+            <span class="route">🧳 行李寄存 Essential by Dorint 前台</span>
+            <span class="detail">💰 免费（酒店代存，省下车站柜 CHF 9/件/天）</span>
+            <span class="detail">📍 Rugenparkstrasse 8-10 · 离 Interlaken West 站步行 5 分钟</span>
           </div>
         </div>
       </div>
       <div class="time-block">
         <div class="time-label">上午（滑翔伞 · 重头戏）</div>
         <div class="time-content">
-          9:30 步行 5 分钟到滑翔伞公司集合点（Skywings / Paragliding Interlaken 都在镇中心）。公司大巴接你去起飞点（<strong>大多数公司用 Beatenberg 山，少数用 First</strong>，看风向决定）。<strong>双人串联滑翔伞 Tandem Paragliding</strong>——专业飞行员带飞，<strong>飞行 15-25 分钟，俯瞰图恩湖+布里恩茨湖+Eiger/Mönch/Jungfrau 三山</strong>，最后降落因特拉肯市中心 Höhematte 草坪。
+          9:30 从酒店步行约 15 分钟（或搭公交几站）到滑翔伞公司集合点（Skywings / Paragliding Interlaken 都在镇中心）。公司大巴接你去起飞点（<strong>大多数公司用 Beatenberg 山，少数用 First</strong>，看风向决定）。<strong>双人串联滑翔伞 Tandem Paragliding</strong>——专业飞行员带飞，<strong>飞行 15-25 分钟，俯瞰图恩湖+布里恩茨湖+Eiger/Mönch/Jungfrau 三山</strong>，最后降落因特拉肯市中心 Höhematte 草坪。
           <div class="transport-card">
             <span class="route">🪂 双人滑翔伞 Tandem Paragliding</span>
             <span class="detail">💰 CHF 200≈¥1,640/人</span>
@@ -1812,9 +1838,9 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
         </div>
       </div>
       <div class="time-block">
-        <div class="time-label">傍晚（取行李 + 入住 Dorint）</div>
+        <div class="time-label">傍晚（入住 Dorint）</div>
         <div class="time-content">
-          18:00 从 Interlaken Ost 取行李 → <strong>直接坐 IC61 列车 1 站到 Interlaken West</strong>（4 分钟，<strong>含在早上买的 CHF 14.80 那张票里，不用额外买票</strong>）。Essential by Dorint 就在 Rugenparkstrasse 8-10，离 <strong>Interlaken West 站步行 5 分钟</strong>，明早去米兰从 West 站上车更近。
+          18:00 从 Interlaken Ost <strong>坐 IC61 列车 1 站到 Interlaken West</strong>（4 分钟，<strong>含在早上买的 CHF 14.80 那张票里，不用额外买票</strong>）。步行 5 分钟到 <strong>Essential by Dorint</strong>（Rugenparkstrasse 8-10）正式办理入住——<strong>行李早上已寄存在前台，直接拿房卡上楼</strong>，明早去米兰从 West 站上车更近。
           <div class="transport-card">
             <span class="route">🚆 IC61 Interlaken Ost Platform 7 → Interlaken West Platform 1</span>
             <span class="detail">⏱ 4 分钟（每 30 分钟一班，往 Basel 方向）</span>
